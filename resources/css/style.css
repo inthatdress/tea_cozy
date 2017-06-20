@@ -1,0 +1,139 @@
+body {
+  margin: 0;
+  font-family: Helvetica;
+  font-size: 22px;
+  color: seashell;
+  background-color: black;
+  opacity: 0.9;
+}
+h2, h4 {
+  background-color: black;
+  text-align: center;
+  padding: 10px;
+  margin: 0;
+  width: 100%;
+}
+header {
+  border-bottom: 1px solid seashell;
+  display: flex;
+  border: 1px solid green;
+  position: fixed;
+  width: 100%;
+  background-color: black;
+}
+nav {
+  border: 1px solid pink;
+  display: flex;
+  flex-flow: row wrap;
+  margin: 0 10px;
+  flex: auto;
+  align-items: center;
+  z-index: 10;
+  min-height: 69px;
+  justify-content: flex-end;
+}
+.nav_space {
+  margin-right: 20px;
+}
+#logo {
+  border: 1px solid red;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-left: 10px;
+}
+#logo img{
+  height: 50px;
+}
+a {
+  color: seashell;
+  font-weight: lighter;
+}
+.outerwrap {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
+  border: 1px solid red;
+}
+.mission_container {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  flex-direction: column;
+  width: 100%;
+  background-image: url(../images/img-mission-background.jpg);
+  margin: auto;
+  justify-content: center;
+  border: 1px solid red;
+}
+#mission {
+  height: 700px;
+  background-repeat: no-repeat;
+  align-content: center;
+  width: auto;
+}
+.featured_container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  width: 1000px;
+  padding: 20px 0;
+  border: 1px solid pink;
+}
+.featured_item {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+  border: 1px solid red;
+}
+#featured_item_space {
+  margin-right: 20px;
+}
+#featured_image {
+  height: 200px;
+  width: 300px;
+  border: 1px solid red;
+  margin-bottom: 10px;
+}
+.location_container {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  text-align: center;
+  border: 3px solid green;
+  flex-wrap: wrap;
+  justify-content: center;
+  height: auto;
+}
+.location_item {
+  height: 500px;
+  width: 1000px;
+  background-image: url(../images/img-locations-background.jpg);
+  background-size: auto;
+  flex-wrap: wrap;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  border: 1px solid red;
+}
+.location {
+  width: 300px;
+  padding: 20px 0;
+  background-color: black;
+  margin: 10px;
+  opacity: 5;
+  border: 1px solid red;
+}
+#location_title {
+  background-color: transparent;
+  font-size: 22px;
+  color: seashell;
+  text-align: center;
+  border: 1px solid red;
+}
