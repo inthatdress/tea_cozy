@@ -6,7 +6,7 @@ body {
   background-color: black;
   opacity: 0.9;
 }
-h2, h4 {
+h2, h4, h5 {
   background-color: black;
   text-align: center;
   padding: 10px;
@@ -61,8 +61,10 @@ a {
   align-items: center;
   align-content: center;
   flex-direction: column;
-  width: 100%;
   background-image: url(../images/img-mission-background.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   margin: auto;
   justify-content: center;
   border: 1px solid red;
@@ -71,7 +73,7 @@ a {
   height: 700px;
   background-repeat: no-repeat;
   align-content: center;
-  width: auto;
+  width: 1000px;
 }
 .featured_container {
   display: flex;
@@ -101,39 +103,55 @@ a {
 }
 .location_container {
   display: flex;
-  align-items: center;
-  align-content: center;
-  text-align: center;
-  border: 3px solid green;
-  flex-wrap: wrap;
+  flex-flow: row wrap;
+  <!--adding-top: 85px;-->
   justify-content: center;
-  height: auto;
+  align-content: center;
+  align-items: center;
+  max-width: 1000px;
+  background-image: url(../images/img-locations-background.jpg);
+  min-height: 500px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border: 1px solid pink;
 }
 .location_item {
-  height: 500px;
-  width: 1000px;
-  background-image: url(../images/img-locations-background.jpg);
-  background-size: auto;
-  flex-wrap: wrap;
   display: flex;
-  flex-direction: row;
   justify-content: center;
   align-items: center;
-  align-content: center;
+  flex-direction: column;
+  text-align: center;
+  width: 300px;
+  height: 200px;
+  margin: auto;
+  background-color: black;
   border: 1px solid red;
 }
-.location {
-  width: 300px;
-  padding: 20px 0;
-  background-color: black;
-  margin: 10px;
-  opacity: 5;
+#location_header {
+  margin:auto;
+  background: transparent;
   border: 1px solid red;
+  padding: 0;
 }
 #location_title {
   background-color: transparent;
-  font-size: 22px;
   color: seashell;
   text-align: center;
   border: 1px solid red;
+}
+.footer {
+  display: flex;
+  border: 1px solid green;
+  width: 1000px;
+  height: 200px;
+  flex-direction: column;
+  background-color: black;
+}
+.copyright {
+  text-align: left;
+  width: 100%;
+  border: 1px solid green;
+  display: flex;
+  align-self: flex-start;
 }
